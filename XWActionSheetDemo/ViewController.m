@@ -7,7 +7,8 @@
 //
 
 #import "ViewController.h"
-
+#import "XWActionSheet.h"
+#import "XWAlertView.h"
 @interface ViewController ()
 
 @end
@@ -16,12 +17,23 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (IBAction)clcik:(UIButton *)sender {
+    
+    XWActionSheet *sheet = [[XWActionSheet alloc] initWithTitle:@"这是标题" otherBtnTitles:@[@"UI",@"java",@"iOS",@"python"]];
+    
+    [sheet showInView:self.view animated:YES];
+
+}
+
+- (IBAction)alertView:(UIButton *)sender {
+    XWAlertView *view = [[XWAlertView alloc] initWitTitle:@"z这是标题" DesTitle:@"这份的撒打算大神大神大神大神大神大叔大叔大飒飒飒大飒飒飒飒大叔大叔大飒飒飒大飒飒飒飒大叔大叔大飒飒飒大飒飒飒飒大叔大叔大飒飒飒大飒飒飒飒大叔大叔大飒飒飒大飒飒飒飒大叔大叔大飒飒飒飒大叔大叔大飒飒飒飒啊上abc" btnArray:@[@"1",@"2",@"3"]];
+    
+
+    [view showInView:self.view animted:YES];
+
 }
 
 @end

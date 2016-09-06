@@ -15,6 +15,8 @@
 		5D401B051D7E67BC003C8A75 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D401B031D7E67BC003C8A75 /* LaunchScreen.storyboard */; };
 		5D401B101D7E67BC003C8A75 /* XWActionSheetDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D401B0F1D7E67BC003C8A75 /* XWActionSheetDemoTests.m */; };
 		5D401B1B1D7E67BC003C8A75 /* XWActionSheetDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D401B1A1D7E67BC003C8A75 /* XWActionSheetDemoUITests.m */; };
+		5D401B2B1D7E683F003C8A75 /* XWActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D401B2A1D7E683F003C8A75 /* XWActionSheet.m */; };
+		5D401B2F1D7E9560003C8A75 /* XWAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D401B2E1D7E9560003C8A75 /* XWAlertView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		5D401B161D7E67BC003C8A75 /* XWActionSheetDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XWActionSheetDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D401B1A1D7E67BC003C8A75 /* XWActionSheetDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XWActionSheetDemoUITests.m; sourceTree = "<group>"; };
 		5D401B1C1D7E67BC003C8A75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5D401B291D7E683F003C8A75 /* XWActionSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XWActionSheet.h; sourceTree = "<group>"; };
+		5D401B2A1D7E683F003C8A75 /* XWActionSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XWActionSheet.m; sourceTree = "<group>"; };
+		5D401B2D1D7E9560003C8A75 /* XWAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XWAlertView.h; sourceTree = "<group>"; };
+		5D401B2E1D7E9560003C8A75 /* XWAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XWAlertView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +107,8 @@
 		5D401AF41D7E67BC003C8A75 /* XWActionSheetDemo */ = {
 			isa = PBXGroup;
 			children = (
+				5D401B2C1D7E9552003C8A75 /* alertView */,
+				5D401B281D7E67C4003C8A75 /* Sheet */,
 				5D401AF81D7E67BC003C8A75 /* AppDelegate.h */,
 				5D401AF91D7E67BC003C8A75 /* AppDelegate.m */,
 				5D401AFB1D7E67BC003C8A75 /* ViewController.h */,
@@ -138,6 +146,24 @@
 				5D401B1C1D7E67BC003C8A75 /* Info.plist */,
 			);
 			path = XWActionSheetDemoUITests;
+			sourceTree = "<group>";
+		};
+		5D401B281D7E67C4003C8A75 /* Sheet */ = {
+			isa = PBXGroup;
+			children = (
+				5D401B291D7E683F003C8A75 /* XWActionSheet.h */,
+				5D401B2A1D7E683F003C8A75 /* XWActionSheet.m */,
+			);
+			name = Sheet;
+			sourceTree = "<group>";
+		};
+		5D401B2C1D7E9552003C8A75 /* alertView */ = {
+			isa = PBXGroup;
+			children = (
+				5D401B2D1D7E9560003C8A75 /* XWAlertView.h */,
+				5D401B2E1D7E9560003C8A75 /* XWAlertView.m */,
+			);
+			name = alertView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,7 +296,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D401B2B1D7E683F003C8A75 /* XWActionSheet.m in Sources */,
 				5D401AFD1D7E67BC003C8A75 /* ViewController.m in Sources */,
+				5D401B2F1D7E9560003C8A75 /* XWAlertView.m in Sources */,
 				5D401AFA1D7E67BC003C8A75 /* AppDelegate.m in Sources */,
 				5D401AF71D7E67BC003C8A75 /* main.m in Sources */,
 			);
@@ -498,6 +526,7 @@
 				5D401B211D7E67BC003C8A75 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5D401B221D7E67BC003C8A75 /* Build configuration list for PBXNativeTarget "XWActionSheetDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +535,7 @@
 				5D401B241D7E67BC003C8A75 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5D401B251D7E67BC003C8A75 /* Build configuration list for PBXNativeTarget "XWActionSheetDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +544,7 @@
 				5D401B271D7E67BC003C8A75 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
